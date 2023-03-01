@@ -1,0 +1,40 @@
+def AddMonth():
+    month=input("Enter number of month")
+    return month
+
+def Rider():
+    noofmonth=AddMonth()
+    No_Of_Days_In_One_Working_Week=6
+    No_Of_Weeks_In_One_Month=4
+    No_Of_Fuel_Used_In_Three_Days=50
+    No_Of_Fuel_Used_In_Six_Days=100
+    No_Of_Km_Covered_In_Three_Days=60
+    No_Of_Km_Covered_In_Six_Days=120
+    
+    print("X_No_Of_Month is", noofmonth )
+    
+    No_Of_Working_Days_In_A_Month= No_Of_Days_In_One_Working_Week * No_Of_Weeks_In_One_Month
+    
+    No_Of_WorkingDays_In_X_Month= int(noofmonth) *  No_Of_Working_Days_In_A_Month
+    
+    Amount_Of_Fuel_In_A_Month=No_Of_Fuel_Used_In_Six_Days * No_Of_Weeks_In_One_Month
+    
+    Amount_Of_Fuel_In_X_Month= int(noofmonth) *  Amount_Of_Fuel_In_A_Month
+    
+    Total_KM_in_A_Month=  No_Of_Km_Covered_In_Six_Days *  No_Of_Weeks_In_One_Month
+    
+    Total_KM_in_X_Month= int(noofmonth) * Total_KM_in_A_Month
+    
+    print("No of working days in a month is", No_Of_Working_Days_In_A_Month, "Days")
+    
+    print("No of working days in ", noofmonth , "months is", No_Of_WorkingDays_In_X_Month , "Days")
+    
+    print("Amount of fuel consumed in a month is", Amount_Of_Fuel_In_A_Month, "Liters")
+    
+    print("Amount of fuel consumed in", noofmonth ,"months is", Amount_Of_Fuel_In_X_Month,"Liters")
+    
+    print("Total KM covered in a Month", Total_KM_in_A_Month, " KM" )
+    
+    print("Total KM covered in", noofmonth ,"months is", Total_KM_in_X_Month,"KM" )
+    
+    Rider()
